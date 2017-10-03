@@ -22,16 +22,16 @@ import time,random,sys,json,codecs,threading,glob,re
 #kc.loginResult()
 
 cl = LINETCR.LINE()
-cl.login(token="authoken kamu")
+cl.login(token="ElkYJVJvfWA5kSYqBZTf.8OvQSB7cUCNtxJSRaTnLFW.tPzwPcFCJOwUwiLUoTdYeLpmEH0sAlmAAukFXSArOqs=")
 
 ki = LINETCR.LINE()
-ki.login(token="authoken kamu")
+ki.login(token="ElJl9jEZ2a00PphlgyF4.rGnjiTwph3BZhrtJd0WtLa.p4VJrylI7vRtV/GCvWzDfz2aJFyOGR8u8zLRZpk1GGE=")
 
 kk = LINETCR.LINE()
-kk.login(token="autotoken kamu")
+kk.login(token="EluEVHqxj9iB8emn7z28.MinrOAgI3TOt5KJCXQX+Aa.LMn5dWRIOAzMj7he8g4KQbCc5n4dNf1FU0r0ina+whA=")
 
 kc = LINETCR.LINE()
-kc.login(token="authoken kamu")
+kc.login(token="ElAA0BQG4kDryOSR6503.biRLhTNOFtsbwVm5XIYpiW.RI4jB5Adz6tvzopL9xaS7lK4tSqyA/E/32ofbSx+Tl8=")
 
 cl
 
@@ -39,15 +39,15 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" [R.A] BOT Menu V.2  􀔃􀄆red check mark􏿿
+helpMessage =""" Deffend-Line BOT Menu V.2  􀔃􀄆red check mark􏿿
 
 􀔃􀅕red arrow right􏿿 Command Public
 [Bot?]     Cek Akun Bot
 [Jam Update] Update jam Bot
 [Id Group] Cek Id Group
 [Ginfo]    Group Info
-[Mid RA]   Cek All mid Bot
-[RA 1/2/3/4] Cek Mid Bot
+[Mid DL]   Cek All mid Bot
+[DL 1/2/3/4] Cek Mid Bot
 [Respon]   Cek Respon Bot
 [Speedbot] Cek Kecepatan Bot
 [Up]       Fungsi Spam Chat
@@ -82,8 +82,8 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,"u33d60593ad472ed11e7907fb1daee6ae"]
-admin=["u33d60593ad472ed11e7907fb1daee6ae"]
+Bots=[mid,Amid,Bmid,Cmid,"u5aa2d0aa38b6566631c797f0334ae415"]
+admin=["u5aa2d0aa38b6566631c797f0334ae415"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -99,10 +99,10 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"[R.A]-First ",
-    "cName2":"[R.A]-Second ",
-    "cName3":"[R.A]-third ",
-    "cName4":"[R.A]-Fourth ",
+    "cName":"[Deffend-Line]-First ",
+    "cName2":"[Deffend-Line]-Second ",
+    "cName3":"[Deffend-Line]-third ",
+    "cName4":"[Deffend-Line]-Fourth ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -856,18 +856,18 @@ def bot(op):
                         cl.sendText(msg.to,"Not for use less than group")
             elif "Id Group" == msg.text:
                 kk.sendText(msg.to,msg.to)
-            elif "Mid RA" == msg.text:
+            elif "Mid DL" == msg.text:
                 cl.sendText(msg.to,mid)
                 ki.sendText(msg.to,Amid)
                 kk.sendText(msg.to,Bmid)
                 kc.sendText(msg.to,Cmid)
-            elif "RA 1" == msg.text:
+            elif "DL 1" == msg.text:
                 cl.sendText(msg.to,mid)
-            elif "RA 2" == msg.text:
+            elif "DL 2" == msg.text:
                 ki.sendText(msg.to,Amid)
-            elif "RA 3" == msg.text:
+            elif "DL 3" == msg.text:
                 kk.sendText(msg.to,Bmid)
-            elif "RA 4" == msg.text:
+            elif "DL 4" == msg.text:
                 kc.sendText(msg.to,Cmid)
             elif msg.text in ["Wkwkwk","Wkwk","Wk","wkwkwk","wkwk","wk"]:
                 msg.contentType = 7
@@ -1470,9 +1470,9 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "People who readed %s\nthat's it\n\nPeople who have ignored reads\n%sIt is abnormal ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "====Tercyduk==== %s\n\nYang Pake Noread\n%s Keciduk Juga :P ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")
+                        cl.sendText(msg.to, "Check Sider sudah on ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
@@ -1795,30 +1795,6 @@ def bot(op):
                 cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
                 ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
                 kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
         #-------------Fungsi Spam Finish---------------------#
 #-----------------------------------------------
             elif "Bc " in msg.text:
@@ -1828,32 +1804,10 @@ def bot(op):
 				kc.sendText(msg.to,(bctxt))
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hi"]:
-                ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-
-#-----------------------------------------------
-
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
-                ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say chomel pekok"]:
-                ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
-                kk.sendText(msg.to,"Jangan nakal ok!")
+            elif msg.text in ["hi","Hi"]:
+                ki.sendText(msg.to,"Hi Sayang :*")
+                kk.sendText(msg.to,"Hi Sayang :*")
+                kc.sendText(msg.to,"Hi Sayang :*")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
                 ki.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
